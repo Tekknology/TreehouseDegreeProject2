@@ -91,7 +91,6 @@ a {
 .portfolio p {
   margin: 0 5%;
   padding-bottom: 30px;
-  letter-spacing: 1px;
 }
 
 /**
@@ -188,7 +187,6 @@ a {
   .portfolio p {
   margin: 0 5%;
   padding-bottom: 30px;
-  letter-spacing: 1px;
   }
   .gallery li {
     float: left;
@@ -280,7 +278,6 @@ a {
   .portfolio p {
   margin: 0 5%;
   padding-bottom: 30px;
-  letter-spacing: 1px;
   }
   .portfolio,
   .gallery {
