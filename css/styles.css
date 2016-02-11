@@ -1,0 +1,303 @@
+/**
+ * ====== Base Styles ======
+ */
+
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #000;
+}
+h1, h3, h4, ul, p {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.gallery img {
+  max-width: 90%;
+}
+.contact,
+.main-footer,
+.head-container {
+  background: whitesmoke;
+}
+/**
+ * Main Header and Nav Mobile Styles
+ */
+
+.home {
+  margin-top: 0;
+}
+.main-header h1 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 2px solid lightsteelblue;
+}
+.main-nav {
+  padding: 5%;
+}
+.main-nav ul {
+  margin: 0;
+}
+.main-nav li {
+  background: lightblue;
+  padding: 10px 0;
+  margin: 2px 5%;
+}
+.pc-only {
+  display: none;
+}
+/**
+ * ====== Profile Image edit ======
+ */
+
+.profile-picture {
+  background: lightblue;
+  margin: 0 15% 10%;
+}
+.home {
+  padding: 5% 0;
+}
+.home img {
+  max-width: 50%;
+  margin: 5% 25%;
+  border-radius: 50%;
+}
+.about-me {
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  margin: 0 5%;
+}
+
+/**
+ * ====== Portfolio Styles ======
+ */
+
+.portfolio h3 {
+  margin: 10% auto;
+}
+.portfolio ul li h3 {
+  margin: 10px 0;
+}
+.portfolio p {
+  margin: 0 5%;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/**
+ * ====== Contact Styles ======
+ */
+
+.contact,
+.contact h3 {
+  padding: 20px 0;
+}
+.contact p {
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  margin: 0 5%;
+}
+.contact li {
+  margin-bottom: 20px;
+}
+
+/**
+ * ====== Footer Styles ======
+ */
+.main-footer ul {
+  display: none;
+}
+.main-footer {
+  padding: 10px 0;
+  border-top: solid 2px lightsteelblue;
+}
+.student {
+  float: left;
+  margin-left: 5%;
+}
+.btp {
+  float: right;
+  margin-right: 5%;
+}
+
+/**
+ * ====== Clearfix Rule ======
+ */
+
+.cf:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/**
+ * Mobile First is now complete, media queries to follow to upscale site
+ */
+
+@media (min-width: 768px) {
+  /**
+ * ==== Tablet main header and nav styles ====
+ */
+  .main-header h1 {
+    border: none;
+  }
+  .main-nav {
+    padding: 10px 0;
+    border-bottom: 2px solid lightsteelblue;
+  }
+  .main-nav li {
+    display: inline-block;
+    margin: 0;
+    min-width: 100px;
+    background: whitesmoke;
+    letter-spacing: 1px;
+  }
+ 
+  /**
+  * ==== Picture and about me styles ====
+  */
+  
+  .profile-picture {
+    float: right;
+    max-width: 35%;
+    margin: 0 5%;
+  }
+  .about-me {
+    text-align: left;
+  }
+  
+ /**
+ * ==== Portfolio styles tablet - 2 columns ====
+ */
+  .portfolio h3 {
+  margin: 30px auto;
+  }
+  .portfolio ul li h3 {
+  margin: 10px 0;
+  }
+  .portfolio p {
+  margin: 0 5%;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+  }
+  .gallery li {
+    float: left;
+    max-width: 50%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+ /**
+ * ==== Footer tablet styles ====
+ */
+  .btp {
+  display: none;
+  }
+  .main-footer ul {
+    display: block;
+  }
+  .main-footer ul li {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 1024px) {
+ /**
+ * Media query for 1024px+ PC screens
+ */
+ /**
+ * Header and main nav styles
+ */
+  .main-header h1 {
+    float: left;
+    margin-left: 5%;
+  }
+  .main-nav {
+    padding-bottom: 0;
+  }
+  .main-nav ul {
+    float: right;
+  }
+  .main-nav li {
+    float: left;
+    margin-right: 20px;
+  }
+  /**
+  * ==== Main PC Header background ====
+  */
+  .home {
+    background: linear-gradient(to bottom, steelblue, rgba(0, 0, 0, 0)),
+                url('../img/O14A0247.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid lightsteelblue;
+  }
+  .profile-picture {
+    background: none;
+    float: none;
+    max-width: 25%;
+    margin: 0 auto;
+  }
+  .profile-picture img {
+    box-shadow: 5px 5px 50px #000; 
+  }
+  .about-me {
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+  }
+  .about-me {
+    max-width: 50%;
+    padding: 30px;
+    font-size: 1.25em;
+  }
+
+ /**
+ * ==== Portfolio styles PC - 3 columns ====
+ */
+  .pc-only {
+    display: inline-block;
+  }
+  .portfolio h3 {
+  margin: 30px auto;
+  }
+  .portfolio ul li h3 {
+  margin: 10px 0;
+  }
+  .portfolio p {
+  margin: 0 5%;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+  }
+  .portfolio,
+  .gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .gallery li {
+    float: left;
+    max-width: 33.3333%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+ /**
+ * ==== Contact PC Styles ====
+ */
+  .contact p {
+    max-width: 28%;
+    margin: 0 auto;
+  }
+}
